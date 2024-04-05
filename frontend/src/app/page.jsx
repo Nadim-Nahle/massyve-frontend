@@ -18,12 +18,15 @@ const LoginPage = () => {
         email,
         password
       });
-      router.push('/welcome')
-      console.log('Login successful', response.data);
+      console.log('Login successful', response?.data?.user);
+      localStorage.setItem('userData', JSON.stringify(response.data.user));
+
+      router.push(`/welcome`);
+
       // Set success message
       setMessage('Login successful!');
     } catch (error) {
-      console.error('Login error', error.response.data);
+      console.error('Login error', error);
       // Set error message
       setMessage('Invalid email or password');
     }
