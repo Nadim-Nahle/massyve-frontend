@@ -1,47 +1,35 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.form-container {
-  margin-bottom: 20px;
-}
-
-.form {
+/* Styles for forms */
+form {
   max-width: 400px;
-  width: 100%;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
 }
 
-.form h1 {
+form h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form label {
+form label {
   display: block;
+  margin-bottom: 5px;
 }
 
-.form input[type="text"],
-.form input[type="email"],
-.form input[type="password"] {
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
   width: 100%;
   padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 
-.btn {
+form button {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
@@ -52,19 +40,32 @@
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+form button:hover {
   background-color: #0056b3;
 }
 
-.register-link p {
-  text-align: center;
+/* Styles for page container */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
-.register-link a {
-  color: #007bff;
-  text-decoration: none;
+/* Additional styles for register-link */
+.register-link {
+  text-align: center; /* Center the content horizontally */
+  margin-top: 10px; /* Add some space between the form and the link */
 }
 
-.register-link a:hover {
-  text-decoration: underline;
+/* Styles for page container */
+.container {
+  display: flex;
+  flex-direction: column; /* Display children in a column */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
